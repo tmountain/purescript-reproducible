@@ -107,6 +107,9 @@ and starting over from scratch.
     $ psc-package install lists
     # add foldable support
     $ psc-package install foldable-traversable
+    # install deps required for building a web app
+    $ psc-package install effect
+    $ psc-package install hedwig
 
 Now you can test your setup via the repl.
 
@@ -147,9 +150,7 @@ fits your needs.
 
     # install the required npm packages from package.json
     $ npm install
-    # install the required purescript packages
-    $ psc-package install effect
-    $ psc-package install hedwig
+    # watch for changes and re-compile as needed
     $ npm start
 
 From here, you can open `index.html`, and you should see Hedwig's
