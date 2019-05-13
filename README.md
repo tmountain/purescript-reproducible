@@ -101,6 +101,8 @@ and starting over from scratch.
 
     # initialize psc-package project
     $ psc-package init
+    # pin to a known package set
+    $ sed -i 's/"set":.*/"set": "psc-0.12.3",/' psc-package.json
     # add repl support
     $ psc-package install psci-support
     # add list support
